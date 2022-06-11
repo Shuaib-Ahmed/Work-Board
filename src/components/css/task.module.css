@@ -1,0 +1,49 @@
+.container {
+  width: 20rem;
+  min-height: 15rem;
+  padding: 1rem;
+  margin: 1rem 0.5rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background: var(--primary-text-color);
+  color: var(--primary-background-color);
+  border-radius: 0.5rem;
+
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+.container:hover {
+  background: #f4f4f4a2;
+}
+.container h4 {
+  font-size: 2rem;
+  color: var(--secondary-background-color);
+  text-align: center;
+}
+.container p {
+  margin: 1rem 0;
+  font-size: 1.7rem;
+  text-align: center;
+}
+
+@media only screen and (max-width: 696px) {
+  .container {
+    min-height: 15rem;
+  }
+}
+
+@media only screen and (max-width: 456px) {
+  .container {
+    width: 30rem;
+  }
+}
+
+@media only screen and (max-width: 356px) {
+  .container {
+    width: 25rem;
+  }
+}
